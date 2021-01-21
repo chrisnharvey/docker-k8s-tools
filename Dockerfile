@@ -1,5 +1,7 @@
 FROM python:3.6-alpine
 
+RUN apk update && apk upgrade && apk add bash
+
 RUN pip install awscli
 
 RUN apk add --no-cache curl
