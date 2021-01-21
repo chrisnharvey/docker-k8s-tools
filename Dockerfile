@@ -5,7 +5,7 @@ RUN pip install awscli
 RUN apk add --no-cache curl
 
 RUN curl -LO https://github.com/digitalocean/doctl/releases/download/v1.41.0/doctl-1.41.0-linux-amd64.tar.gz
-RUN tar xf doctl-1.41.0-linux-amd64.tar.gz
+RUN tar xf doctl-1.55.0-linux-amd64.tar.gz
 RUN mv doctl /usr/local/bin
 RUN chmod +x /usr/local/bin/doctl
 
