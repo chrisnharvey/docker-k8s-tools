@@ -2,7 +2,7 @@ FROM python:3.6-alpine
 
 RUN pip install awscli
 
-RUN apk add --no-cache curl bash openssl
+RUN apk add --no-cache curl bash openssl gettext
 
 RUN curl -LO https://github.com/digitalocean/doctl/releases/download/v1.55.0/doctl-1.55.0-linux-amd64.tar.gz
 RUN tar xf doctl-1.55.0-linux-amd64.tar.gz
